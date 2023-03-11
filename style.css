@@ -1,0 +1,46 @@
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    gap: 1rem;
+}
+
+li {
+    position: relative;
+}
+
+iframe {
+    pointer-events: none;
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    box-shadow: 1px 3px 8px rgb(0 0 0 / 50%);
+}
+
+ul {
+    list-style: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(43, 41, 41, 0.861);
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.overlay iframe {
+    pointer-events: all;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
